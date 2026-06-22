@@ -39,31 +39,39 @@ The number of simultaneously recorded neurons follows an exponentially increasin
 ## Installation & Prerequisites
 
 ### Clone the repository
+```Bash
 git clone [https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git](https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git)
 cd Self-adaptive-BMI-decoders
+```
 
 ### Install dependencies
+```python
 pip install -r requirements.txt
+```
 
 ## How to Run
 
 1. Open-loop Decoding
 To train or evaluate the DSNN decoder on standard pre-recorded neural datasets:
+```Bash
 cd Open_loop
 python UCSF_open_loop.py  # Training
 python Open_loop_inference.py # Inference
+```
 
-2. Closed-loop Decoding
+3. Closed-loop Decoding
 To simulate the self-adaptive continuous learning process (using Banditron/AGREL updates) for closed-loop interactions:
+```Bash
 cd Closed_loop
 python OPS_closed_loop_electrode_shift.py  # For electrode shift experiment
 python OPS_closed_loop_firing_rate_drift.py  # For firing rate drift experiment
 python OPS_closed_loop_loss_neuron.py  # For loss of neurons experiment
+```
 
 
 ## Citation
 If you find this work, code, or decoders useful for your research, please consider citing our paper:
-
+```text
 @article{biyan2026energy,
   title={An energy-efficient spiking neural network with continuous learning for self-adaptive brain--machine interface},
   author={Biyan, Zhou and Basu, Arindam},
@@ -74,6 +82,7 @@ If you find this work, code, or decoders useful for your research, please consid
   year={2026},
   publisher={IOP Publishing}
 }
+```
 
 
 
