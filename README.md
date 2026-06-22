@@ -5,7 +5,7 @@
 [![Language](https://img.shields.io/badge/Language-Python-3776AB.svg)](https://www.python.org/)
 
 This repository contains the official code implementation for the paper: 
-**"An energy-efficient spiking neural network with continuous learning for self-adaptive brain-machine interface"** published by the **BRAINSys Lab** at the **City University of Hong Kong (CityU)**.
+**"An energy-efficient spiking neural network with continuous learning for self-adaptive brain-machine interface"** published at the **City University of Hong Kong (CityU)**.
 
 ---
 
