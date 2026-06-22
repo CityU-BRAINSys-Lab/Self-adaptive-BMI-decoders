@@ -34,14 +34,15 @@ The number of simultaneously recorded neurons follows an exponentially increasin
 ├── t_test.py               # Statistical evaluation and significance test scripts
 ├── closed_loop_figures.vsdx# Source visualization diagram for the closed-loop paradigm
 └── requirements.txt        # Required packages and software environment list
+```
 
 ## Installation & Prerequisites
 
-# Clone the repository
+### Clone the repository
 git clone [https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git](https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git)
 cd Self-adaptive-BMI-decoders
 
-# Install dependencies
+### Install dependencies
 pip install -r requirements.txt
 
 ## How to Run
