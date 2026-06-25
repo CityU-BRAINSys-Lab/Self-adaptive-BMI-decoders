@@ -69,12 +69,18 @@ There are several entry points to the program depending on what you want to do:
 
 Inputs for open-loop decoding:  
 
-* The datasets can be downloaded from: https://zenodo.org/records/3854034#.ZCK4eOxBz0o
-* The data pre-processing methods are used in the same way as Neurobench (primate reaching task): https://neurobench.ai/
+* The datasets can be downloaded from: https://zenodo.org/records/3854034#.ZCK4eOxBz0o.
+* The data pre-processing methods are used in the same way as Neurobench (primate reaching task): https://neurobench.ai/.
 
 Outputs for open-loop decoding:  
 
 * The original label in the dataset is continuous values (velocities). However, we convert it to a discrete value -- discrete classes (see the descriptions in the paper). The functions related to the conversion are listed in the file: `utils_files/RL_closed_loop_utils.py`.
+
+Inputs for closed-loop decoding: 
+
+* The inputs in the closed-loop experiments are the neural signal generated from the Online Prosthesis Simulator (OPS): https://journals.physiology.org/doi/full/10.1152/jn.00503.2010.
+* The OPS function and related environment setup are shown in `utils_files/closed_loop_simulator_Shah.py`.
+
 
 
 ## How to Run
