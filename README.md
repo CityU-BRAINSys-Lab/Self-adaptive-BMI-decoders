@@ -87,7 +87,7 @@ python OPS_closed_loop_loss_neuron.py  # For loss of neurons experiment
 ```
 
 
-## Citation
+# Citation
 If you find this work, code, or decoders useful for your research, please consider citing our paper:
 ```text
 @article{biyan2026energy,
