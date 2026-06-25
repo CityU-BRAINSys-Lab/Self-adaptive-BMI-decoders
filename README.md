@@ -20,6 +20,25 @@ The number of simultaneously recorded neurons follows an exponentially increasin
 
 ---
 
+# First time setup
+
+To download this repository, you can click the green button in the top right and download the entire repo as a zip file. Do not right click to save to file, as that saves the HTML wrapper on the website. Alternatively, you can clone the repository using git. Here's a link to a tutorial teaching you how to set up git yourself: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. You can also use the code provided below:
+
+```bash
+git clone [https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git](https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git)
+cd Self-adaptive-BMI-decoders
+```
+
+This code requires Python 3.11. Install from https://www.python.org/downloads/. Make sure to add Python to your PATH so it can be called by command prompt via the 'py' command. Disabling the path length character limit is not necessary.
+
+To install the libraries this repository needs:
+
+```bash
+pip install -r requirements.txt
+```
+
+# How to use
+
 ## 📂 Repository Structure
 
 ```text
@@ -36,18 +55,17 @@ The number of simultaneously recorded neurons follows an exponentially increasin
 └── requirements.txt        # Required packages and software environment list
 ```
 
-## Installation & Prerequisites
+There are several entry points to the program depending on what you want to do:
 
-### Clone the repository
-```bash
-git clone [https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git](https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git)
-cd Self-adaptive-BMI-decoders
-```
+* `Closed_loop/Closed_loop_models.py` is used when you want to change the models in closed-loop experiments
+* `Closed_loop/OPS_closed_loop_training_phase1.py` is used when you want to pre-train the models (the first training stage)
+* `Closed_loop/OPS_closed_loop_training_phase2.py` is used when you want to pre-train the models (the second training stage)
+* `Open_loop/Open_loop_inference.py` can be used for the inference stage in the open-loop experiment
+* `Open_loop/UCSF_open_loop.py` can be used for pre-training in the open-loop experiment
+* `Open_loop/Open_loop_models.py` is used when you want to change the models in open-loop experiments
+* `utils_files/RL_closed_loop_utils.py` contains several functions used in experiments
+* `utils_files/closed_loop_simulator_Shah.py` contains the closed-loop experiments setup functions (adapted from [![Paper](https://img.shields.io/badge/Paper-IOPscience-blue)](https://iopscience.iop.org/article/10.1088/1741-2552/ad1787/meta))
 
-### Install dependencies
-```bash
-pip install -r requirements.txt
-```
 
 ## How to Run
 
