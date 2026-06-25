@@ -69,7 +69,7 @@ There are several entry points to the program depending on what you want to do:
 
 ## How to Run
 
-1. Open-loop Decoding
+1. Open-loop Decoding  
 To train or evaluate the DSNN decoder on standard pre-recorded neural datasets:
 ```bash
 cd Open_loop
@@ -77,7 +77,7 @@ python UCSF_open_loop.py  # Training
 python Open_loop_inference.py # Inference
 ```
 
-3. Closed-loop Decoding
+3. Closed-loop Decoding  
 To simulate the self-adaptive continuous learning process (using Banditron/AGREL updates) for closed-loop interactions:
 ```bash
 cd Closed_loop
