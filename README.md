@@ -25,7 +25,7 @@ The number of simultaneously recorded neurons follows an exponentially increasin
 To download this repository, you can click the green button in the top right and download the entire repo as a zip file. Do not right click to save to file, as that saves the HTML wrapper on the website. Alternatively, you can clone the repository using git. Here's a link to a tutorial teaching you how to set up git yourself: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git. You can also use the code provided below:
 
 ```bash
-git clone [https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git](https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git)
+git clone https://github.com/CityU-BRAINSys-Lab/Self-adaptive-BMI-decoders.git
 cd Self-adaptive-BMI-decoders
 ```
 
