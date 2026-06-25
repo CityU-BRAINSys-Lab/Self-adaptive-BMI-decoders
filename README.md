@@ -64,7 +64,17 @@ There are several entry points to the program depending on what you want to do:
 * `Open_loop/UCSF_open_loop.py` can be used for pre-training in the open-loop experiment
 * `Open_loop/Open_loop_models.py` is used when you want to change the models in open-loop experiments
 * `utils_files/RL_closed_loop_utils.py` contains several functions used in experiments
-* `utils_files/closed_loop_simulator_Shah.py` contains the closed-loop experiments setup functions (adapted from [![Paper](https://img.shields.io/badge/Paper-IOPscience-blue)](https://iopscience.iop.org/article/10.1088/1741-2552/ad1787/meta))
+* `utils_files/closed_loop_simulator_Shah.py` contains the closed-loop experiments setup functions (adapted from [![Paper](https://img.shields.io/badge/Paper-IOPscience-blue)](https://iopscience.iop.org/article/10.1088/1741-2552/ad1787/meta))  
+
+
+Inputs for open-loop decoding:  
+
+* The datasets can be downloaded from: https://zenodo.org/records/3854034#.ZCK4eOxBz0o
+* The data pre-processing methods are used in the same way as Neurobench (primate reaching task): https://neurobench.ai/
+
+Outputs for open-loop decoding:  
+
+* The original label in the dataset is continuous values (velocities). However, we convert it to a discrete value -- discrete classes (see the descriptions in the paper). The functions related to the conversion are listed in the file: `utils_files/RL_closed_loop_utils.py`.
 
 
 ## How to Run
