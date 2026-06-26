@@ -105,7 +105,7 @@ python OPS_closed_loop_firing_rate_drift.py  # For firing rate drift experiment
 python OPS_closed_loop_loss_neuron.py  # For loss of neurons experiment
 ```
 
-3. Change device:
+3. Change device  
 The default device is "cuda". We are using an NVIDIA 4090Ti GPU to run it. However, if you want to change a device, feel free to replace "DEVICE" in the code with "cpu".
 
 # Citation
