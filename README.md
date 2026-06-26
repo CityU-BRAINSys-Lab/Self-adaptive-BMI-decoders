@@ -96,7 +96,7 @@ python UCSF_open_loop.py  # Training
 python Open_loop_inference.py # Inference
 ```
 
-3. Closed-loop Decoding  
+2. Closed-loop Decoding  
 To simulate the self-adaptive continuous learning process (using Banditron/AGREL updates) for closed-loop interactions:
 ```bash
 cd Closed_loop
@@ -105,6 +105,9 @@ python OPS_closed_loop_firing_rate_drift.py  # For firing rate drift experiment
 python OPS_closed_loop_loss_neuron.py  # For loss of neurons experiment
 ```
 
+3. Change device:
+
+The default device is "cuda". We are using an NVIDIA 4090Ti GPU to run it. However, if you want to change a device, feel free to replace "DEVICE" in the code with "cpu".
 
 # Citation
 If you find this work, code, or decoders useful for your research, please consider citing our paper:
