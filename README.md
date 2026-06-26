@@ -81,6 +81,9 @@ Inputs for closed-loop decoding:
 * The inputs in the closed-loop experiments are the neural signal generated from the Online Prosthesis Simulator (OPS): https://journals.physiology.org/doi/full/10.1152/jn.00503.2010.
 * The OPS function and related environment setup are shown in `utils_files/closed_loop_simulator_Shah.py`.
 
+Outputs for closed-loop decoding:
+
+* We can only get discrete values -- class numbers from models (classification tasks), and we need to convert the discrete value to a continuous velocity to update the cursor position of the closed-loop environment. The conversion functions are listed in the `utils_files/RL_closed_loop_utils.py`.
 
 
 ## How to Run
