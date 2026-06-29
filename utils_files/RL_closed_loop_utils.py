@@ -62,7 +62,7 @@ def get_moving_avg(target_acq_time,window_size):
 def save_results(model_name, rewards, time_to_target, path):
 
     with open(os.path.join(path, "test_data.txt"), "a") as f:
-        f.write("model_name" + str(model_name) + "\n")
+        f.write("model_name: " + str(model_name) + "\n")
 
         f.write("average_time_to_target" + "\n")
         f.write("[")
@@ -82,7 +82,7 @@ def save_results(model_name, rewards, time_to_target, path):
 def save_results_trajectory(model_name, pos_trial, target_lst, start_point_lst, path):
 
     with open(os.path.join(path, "test_data.txt"), "a") as f:
-        f.write("model_name" + str(model_name) + "\n")
+        f.write("model_name: " + str(model_name) + "\n")
 
         f.write("pos_trial" + "\n")
         f.write("[")
