@@ -226,7 +226,7 @@ if __name__ == "__main__":
     ave_time_to_target = get_moving_avg(ave_time_to_target,4)
     
 
-    save_results(model_name=match_case(choice), rewards=ave_rewards, time_to_target=ave_time_to_target, path="./Closed_loop_Results/")
+    save_results(model_name=match_case(choice), rewards=ave_rewards, time_to_target=ave_time_to_target, path="./Closed_loop/Results/")
 
 
 
